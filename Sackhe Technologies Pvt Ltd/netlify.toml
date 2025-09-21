@@ -1,12 +1,11 @@
 [build]
-  base = "/"
-  publish = "dist"  # Change this to your actual build output directory
+  command = "npm run build"
+  publish = "dist"  # Change this to match your framework's output directory
 
-# If you're using a specific build command:
 [build.environment]
-  NODE_VERSION = "18"  # Or your preferred Node version
+  NODE_VERSION = "18"  # Or your preferred version
 
-# Optional: Redirects or other settings
+# For single-page applications (React, Vue, etc.)
 [[redirects]]
   from = "/*"
   to = "/index.html"

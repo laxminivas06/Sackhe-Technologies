@@ -1,0 +1,13 @@
+[build]
+  base = "/"
+  publish = "dist"  # Change this to your actual build output directory
+
+# If you're using a specific build command:
+[build.environment]
+  NODE_VERSION = "18"  # Or your preferred Node version
+
+# Optional: Redirects or other settings
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
